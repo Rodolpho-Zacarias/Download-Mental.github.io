@@ -7,22 +7,8 @@ html, body {
 }
 
 @font-face {
-    font-family: 'estresse';
-    src: url('font/handful_of_nothing-webfont.woff2') format('woff2'), url('font/handful_of_nothing-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'depressao';
     src: url('font/manic-depressive-webfont.woff2') format('woff2'), url('font/manic-depressive-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ansiedade';
-    src: url('font/thundertitanstraight-webfont.woff2') format('woff2'), url('font/thundertitanstraight-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -84,16 +70,13 @@ header {
     transition: 0.5s;
     text-shadow: 2px 2px black;
 }
-
 #ansiedade-menu:hover {
     background-color: yellow;
     transition: 0.5s;
     text-shadow: 2px 2px black;
 }
-
-#depressao-menu:hover {
+#depressao-menu {
     background-color: #41BDD9;
-    transition: 0.5s;
     text-shadow: 2px 2px black;
 }
 
@@ -114,7 +97,7 @@ header {
 /*-CAPA-*/
 
 #imagem_fundo {
-    background-image: url("img/fundo-novo-2.png");
+    background-image: url("img/depressao-fundo.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -130,7 +113,6 @@ header {
     color: #f7f7f7;
     padding-top: 20%;
     margin-top: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #subtitulo {
@@ -157,135 +139,21 @@ header {
 
 /*-FIM CAPA-*/
 
-/*-SAUDE MENTAL-*/
+/*-RODAPÉ-*/
 
-#tit-saude-mental {
-    font-size: 40px;
-    margin-top: 30px;
-}
-
-#saude-mental {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px 0px 20px 0px;
-    justify-content: center;
-    align-items: center;
-}
-
-#saude-mental p {
-    text-align: justify;
-}
-
-.sobre-saude-mental {
-    flex: 50%;
-    padding: 0px 50px;
-}
-
-.img-saude {
-    flex: 50%;
-    padding: 0px 50px;
-}
-
-.img-saude img {
-    max-width: 100%;
-    height: auto;
-}
-
-/*-FIM SAUDE MENTAL-*/
-
-/*-DIF. TRANST. DOENÇA-*/
-
-#tit-transt {
-    font-size: 40px;
-}
-
-.transt {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px 0px 20px 0px;
-    justify-content: center;
-    align-items: center;
-}
-
-.transt p {
-    text-align: justify;
-}
-
-.sobre-transt {
-    flex: 50%;
-    padding: 0px 50px;
-}
-
-.img-transt {
-    flex: 50%;
-    padding: 0px 50px;
-}
-
-.img-transt img {
-    max-width: 100%;
-    height: auto;
-}
-
-/*-FIM DIF. TRANST. DOENÇA-*/
-
-/*-ALGUNS TRANSTORNOS-*/
-
-#tit-alguns-transt {
-    font-size: 30px;
-}
-
-.container-cards {
+footer {
     display: flex;
     max-width: 100%;
     margin: 0 auto;
+    padding: 30px 0px 50px 0px;
+    background-color: black;
+    color: #ffffff;
     justify-content: center;
-    justify-content: space-between;
-}
-
-.container-cards a {
-    text-decoration: none;
-    color: black;
-}
-
-.card-transt {
-    max-width: 400px;
-    text-align: center;
-    margin: 10px;
-    flex: 30%;
-}
-
-.card-transt img {
-    max-width: 100%;
-    height: 300px;
-}
-
-.card-transt:hover {
-    box-shadow: 2px 7px 8px #777777;
-    transition: 0.5s;
-}
-
-/*-FIM ALGUNS TRANSTORNOS-*/
-
-/*-SOBRE MIM-*/
-
-.sobre {
-    display: flex;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 30px 0px 20px 0px;
-    justify-content: center;
-    background-color: #f7f7f7;
 }
 
 .coluna {
     padding: 0px 40px;
     max-width: 50%;
-}
-
-.img-sobre-mim img {
-    border-radius: 50%;
 }
 
 .coluna h1 {
@@ -302,49 +170,76 @@ header {
     line-height: 1.6;
 }
 
-/*-FIM SOBRE MIM-*/
-
-/*-RODAPÉ-*/
-
-footer {
-    display: flex;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 30px 0px 50px 0px;
-    background-color: black;
-    color: #ffffff;
-    justify-content: center;
-}
-
 /*-FIM RODAPÉ*/
 
 /*-CLASSES PARA EDIÇÃO DE TEXTO-*/
+
+.coluna-texto {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cinza {
+    background-color: #f7f7f7;
+}
+
+.texto {
+    flex: 50%;
+    padding: 0px 50px;
+}
+.texto-causas {
+    padding: 0 100px;
+}
+.texto-sintomas {
+    padding: 0px 50px;
+}
+.texto-tipos {
+    padding: 0px 100px;
+}
+
+.texto-tratamento {
+    padding: 0px 100px;
+}
+
+#tratamento-texto {
+    text-align: center;
+}
+
+.texto h2 {
+    font-size: 30px;
+}
+
+.texto h3 {
+    font-size: 20px;
+}
+
+.texto p {
+    text-align: justify;
+}
+
+.img-depressao {
+    flex: 50%;
+    padding: 0px 50px;
+}
+
+.img-depressao img {
+    width: 100%;
+}
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.estresse-txt {
-    font-family: 'estresse';
-    font-size: 25px;
-}
-
 .depressao-txt {
     font-family: 'depressao';
-    font-size: 25px;
-}
-
-.ansiedade-txt {
-    font-family: 'ansiedade';
-    font-size: 25px;
 }
 
 .centralizado {
     text-align: center;
-}
-
-.justificado {
-    text-align: justify;
 }
 
 /*-FIM CLASSES PARA EDIÇÃO DE TEXTO-*/
@@ -355,28 +250,22 @@ body {
     .menu {
         visibility: hidden;
     }
-    #saude-mental {
+    #imagem_fundo {
+        background-image: url(img/rsz_4109951162989473918.jpg);
+    }
+    .coluna-texto {
         flex-direction: column;
     }
-    .img-saude-mental {
+    .img-depressao {
         flex: 1;
         padding: 20px;
         width: 100%;
     }
-    .transt {
-        flex-direction: column;
+    .texto-tipos {
+        padding: 20px;
     }
-    .container-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    .card-transt p {
-        padding: 0;
-    }
-    .sobre {
-        flex-direction: column;
-        align-items: center;
-        flex-direction: column;
+    .texto-tratamento {
+        padding: 20px;
     }
     .coluna {
         padding: 0;
